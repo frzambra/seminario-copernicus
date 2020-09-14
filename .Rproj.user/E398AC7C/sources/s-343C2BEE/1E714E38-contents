@@ -1,0 +1,287 @@
+---
+title: "Observación de la Tierra"
+subtitle: "Monitoreo de la sequía en Chile"
+author: "Francisco Zambrano"
+institute: "Hémera, Centro de Observación de la Tierra, Universidad Mayor"
+date: "Septiembre 14, 2020"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+library(xaringanExtra)
+style_mono_light(link_color = 'blue',
+                 code_inline_color = 'orange',
+                 background_image = 'img/logo_hemera.png',
+                 background_size = '10%',
+                 background_position = '95% 5%')
+xaringanExtra::use_tile_view()
+xaringanExtra::use_fit_screen()
+xaringanExtra::use_webcam()
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+```
+class: inverse, center, middle
+
+# ¿Cuál es el Problema?
+
+---
+background-image: url(gifs/earth_fucked.gif)
+background-size: cover
+
+# Cambio climático
+
+---
+background-image: url(gifs/global_temperature_nasa.gif)
+background-size: cover
+
+## Temperatura global
+---
+
+background-image: url(gifs/atmospheric_change.gif)
+background-size: cover
+
+## Cambio en los patrones de precipitaciones
+
+---
+## Sequía
+
+> La sequía es considerada uno de los desastres naturales más complejos y que impacta a más personas en el mundo, cuyos efectos son evidenciados en primer lugar en la agricultura.
+
+--
+
+- Es un fenómeno **rastrero** `(Gillette, 1950)`
+
+--
+
+- La sequía es uno de los **desastres natural más complejos** de identificar, analizar, monitorear y manejar `(Burton, Kates, and White, 1978; Wilhite, 1993)`.
+
+--
+
+- Las diferentes variables hidrometeorológicas y factores socioeconómicos, así como la naturaleza estocástica de la demanda de agua, es un obstaculo para una definición precisa `(Mishra and Singh, 2010)`.
+
+--
+
+- En una forma realista la definición de sequía debe ser para una **región y aplicación (o impacto) específico** `(Wilhite and Glantz, 1985)`.
+
+---
+## Sequía
+
+## Algunas Definiciones
+
+  1. Deficiencia extendida y sostendia de precipitaciones (WMO,1986).
+
+  2. La cantidad de años en que los cultivos no son productivos por falta de humedad (FAO, 1983).
+
+  3. Fenomeno natural que ocurre cuando las precipitaciones se encuentran significativamente bajo sus registros historicos normales, causando serios desequilibrios hidrológicos que afecta negativamente la producción (UN, 1994).
+
+---
+background-image: url(img/esquema_sequia_agricola.png)
+background-size: contain
+background-position: 50% 100%
+
+## Sequía
+
+
+---
+class: inverse, center, middle
+
+# ¿Cómo se enfrenta?
+
+---
+## Monitoreo satelital de la sequía agrícola
+
+- Más de 100 índices de sequía se han propuesto (Zargar et al., 2011; Niemeyer 2008)
+
+--
+
+  - **Meteorológicos :** índice de Precipitación Estandarizado (SPI), Palmer Drought Severity Index (PDSI).
+
+--
+
+  - **Hidrológicos :** índice de caudal estandarizado (SSI), índice de abastecimiento de agua superficial (SWSI)
+
+--
+
+  - **Agrícolas **: índice de diferencia normalizada de la vegetación (NDVI), NDVIA, VCI, TCI, VHI, VTCI
+
+
+---
+background-image: url(gifs/satellite1.gif)
+background-size: cover
+
+# Monitoreo satelital de la sequía agrícola
+
+---
+
+## Monitoreo satelital de la sequía agrícola
+
+### Fuentes de datos
+
+- Multiples
+
+  - MODIS (250m,500m, 1km; 2000-presente)
+  
+  - GIMMS (8km; 1981-2015)
+  
+  - Landsat (1972 - presente)
+  
+  - Sentinel (2014 - presente)
+  
+---
+## Monitoreo satelital de la sequía agrícola
+¿Cómo funciona?
+
+Sensores capturan información en distintas longitudes de onda.
+
+Diferentes medios presentan diferente respuesta
+
+.center[
+![](img/EM_Spectrum_Properties_es.png)
+]
+
+---
+## Monitoreo satelital de la sequía agrícola
+
+¿Cómo funciona?
+
+Ej. NDVI: Condición de salud de la vegetación
+
+.center[
+![](img/NDVI_ejemplo.jpg)
+]
+
+---
+## Monitoreo satelital de la sequía agrícola
+
+¿Cómo funciona?
+
+.center[
+![](img/maiz_ndvi.png)
+]
+
+---
+background-image: url(gifs/MOD13C1_NDVI_600x300_opt_delay5_looped_paused_2000_2013.gif)
+background-size: cover
+
+## Monitoreo satelital de la sequía agrícola
+Índice de diferencia normalizada de la vegetación (NDVI)
+
+---
+background-image: url(img/fig_ndvi_time-series.png)
+background-size: contain
+background-position: 50% 50%
+
+## Monitoreo satelital de la sequía agrícola
+
+---
+background-image: url(img/fig_ndvi_season_max_min_mean.png)
+background-size: contain
+background-position: 50% 100%
+
+## Monitoreo satelital de la sequía agrícola
+---
+background-image: url(img/fig_ndvi_ridges.png)
+background-size: contain
+background-position: 50% 50%
+
+## Monitoreo satelital de la sequía agrícola
+
+---
+background-image: url(img/fig_zndvi_1981-2015.png)
+background-size: contain
+background-position: 50% 50%
+
+## Monitoreo satelital de la sequía agrícola
+
+Índice z-score NDVI 
+
+---
+background-image: url(img/sequia_minagri.png)
+background-size: contain
+background-position: 50% 50%
+
+
+---
+class: inverse, center, middle
+
+# ¿Cómo avanzamos?
+
+---
+background-image: url(img/comparacion_vci_zndvi.png)
+background-size: contain
+background-position: 50% 50%
+
+## Problemas con los índices en uso
+
+---
+## Problemas con los índices en uso
+
+- Los índices escalados como el Vegetation Condition Index (VCI) son sensibles a los valores anómalos.
+
+--
+
+- El VCI sobrestima eventos de sequía extremo.
+
+--
+
+- Además, solo considera la condición para un periodo determinado (ej, un mes, 16 días, 10 días).
+
+---
+background-image: url(img/fig_cNDVI.png)
+background-size: contain
+background-position: 50% 100%
+
+## ¿En qué estámos trabajando?
+
+Considerar el periodo más relevante para la agricultura: la temporada
+
+---
+background-image: url(img/fig_zcNDVI.png)
+background-size: contain
+background-position: 50% 80%
+
+## ¿En qué estámos trabajando?
+
+Un índice que considere la condición durante toda la temporada agrícola
+
+---
+background-image: url(img/fig_comparison_vci_zNDVI_zcNDVI.png)
+background-size: contain
+background-position: 50% 50%
+
+## ¿En qué estámos trabajando?
+
+---
+class: inverse, center, middle
+
+# Algunos resultados
+
+---
+background-image: url(img/area_studio.png)
+background-size: contain
+background-position: 50% 50%
+
+---
+background-image: url(img/long_pattern_zcNDVI.png)
+background-size: contain
+background-position: 50% 50%
+
+---
+background-image: url(img/boxplot_zcNDVI_North.png)
+background-size: contain
+background-position: 50% 50%
+
+---
+background-image: url(img/zcNDVI_Dec_Coq-LosRios.png)
+background-size: contain
+background-position: 50% 50%
+
